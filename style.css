@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #fdc913;
+  --light-gray: #5f5f5f;
+  --dark-gray: #292929;
+  --red: #ce2829;
+  --beige: #faf7f2;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--beige);
+  color: var(--dark-gray);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER  ayarlarını kontrol et*/
+
+.header {
+  background-color: var(--red);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-logo {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+/* HERO  kısımlarını buradan yazarız*/
+
+.Hero {
+  min-height: 560px;
+  background-image: url("./public/assets/iteration-1/home-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 1rem;
+  position: relative;
+}
+
+.Hero-content {
+  text-align: center;
+  color: white;
+  max-width: center;
+ position: absolute;
+  top: 80px;
+
+}
+
+.Hero-content h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  font-weight: 280;
+}
+
+.tagline {
+  color: #fdc913;
+  font-family: "Satisfy", cursive;
+    font-size: 28px;
+      margin-bottom: 8px;
+}
+
+.Hero-content button {
+  background-color: #fdc913;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CATEGORIES */
+
+.Categories {
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.categories-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categories-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.categories-list li img {
+  width: 20px;
+  height: 20px;
+}
+
+/* PROMOTIONS */
+
+.Promotions,
+.promotions {
+  background: #faf7f2;
+  padding: 50px 1rem;
+}
+
+.promo-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 180px;
+}
+.promo-card h2,
+.promo-card h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
+.promo-big {
+  grid-row:  span 2;
+  background-color: #ce2829;
+  background-image: url("./public/assets/iteration-2/cta/kart-1.png");
+  color: white;
+  padding: 60px 50px;
+  border-radius: 12px;
+  min-height:380px  ;
+   justify-content: center;
+}
+
+.promo-dark {
+  background-color: #292929;
+  background-image: url("./public/assets/iteration-2/cta/kart-2.png");
+  color: white;
+  border-radius: 12px;
+  justify-content: flex-start;
+  padding: 30px;
+    min-height: 180px;
+    align-items: flex-start;
+  padding: 40px 24px 24px;
+}
+
+.promo-dark h3,
+.promo-light h3 {
+  max-width: 220px;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+    width: 180px;
+}
+
+.promo-dark button,
+.promo-light button {
+  margin-top: 0;
+}
+
+
+.promo-light {
+  background-color: #fff;
+  background-image: url("./public/assets/iteration-2/cta/kart-3.png");
+  color: var(--dark-gray);
+  padding: 30px;
+  border-radius: 12px;
+  justify-content: center;
+  padding: 30px;
+    min-height: 180px;
+}
+
+.promo-card button {
+  width: 140px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+color: #ce2829;
+  cursor: pointer;
+}
+.promo-big h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.promo-big p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.promo-big button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* PRODUCTS (renklerş kontrol et) */
+
+.products {
+  background-color: #faf7f2;
+  padding: 4rem 1rem 5rem;
+  text-align: center;
+}
+
+.products-top-text {
+  font-family: "Satisfy", cursive;
+  font-size: 26px;
+  color: #ce2829;
+  margin-bottom: 10px;
+}
+
+.products h2 {
+  font-size: 2rem;
+  color: #292929;
+  margin-bottom: 2rem;
+}
+
+.product-filters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+}
+
+.product-filters li {
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-filters img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.product-filters .active {
+  background-color: #292929;
+  color: white;
+}
+
+.product-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #292929;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5f5f5f;
+  font-size: 0.9rem;
+}
+
+.product-info strong {
+  color: #292929;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  margin-top: 4rem;
+  font-family: "Barlow", sans-serif;
+}
+
+.footer-top {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-brand h2 {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-item img {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.2rem;
+}
+
+.contact-item p {
+  color: #d9d9d9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-menu li {
+  margin-bottom: 0.9rem;
+  color: #d9d9d9;
+  font-size: 0.95rem;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.instagram-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+  border-top: 1px solid #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+}
+
+.footer-bottom img {
+  width: 16px;
+  height: 16px;
+}
+
+button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+
+
+
+@media (max-width: 992px) {
+  .Hero {
+    height: 600px;
+  }
+
+  .Hero-content h1 {
+    font-size: 44px;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .promo-big {
+    grid-row: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .Hero {
+    height: 500px;
+    padding: 2rem 1rem;
+  }
+
+  .Hero-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .Hero-content button {
+    padding: 12px 28px;
+  }
+
+  .categories-list {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 28px;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .categories-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.95rem;
+  }
+
+   .categories-list li img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .promo-card {
+    min-height: 180px;
+  }
+
+  .promo-big {
+    padding: 30px;
+  }
+
+  .promo-big h2 {
+    font-size: 34px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
